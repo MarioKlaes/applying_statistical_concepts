@@ -1,0 +1,11 @@
+research_topics:
+
+
+PCA analysis does the job
+
+Maximum likelihood estimate
+
+Bootstrap
+
+Mean Absolute Percentage Error
+

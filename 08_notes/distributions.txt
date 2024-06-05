@@ -1,0 +1,91 @@
+https://www.youtube.com/watch?v=rzFX5NWojp0
+
+Normal Distribution / Gaussian Distribution / Bell Curve
+======================================================================
+
+-> Average = middle point in the bell curve
+-> mean = how high the bell curve is
+-> standard deviation = how spread the data set it
+
+-> The higher the curve, the more concetrated the data set is; therefore, less variation (small standard deviation)
+
+
+
+Bernoulli Distribution
+=======================================================================
+-> 1 trial with 2 possible outcomes
+
+i.e. 
+-> voting: you can vote RED or GREEN
+-> answer true or false for a question
+-> flip of a coin: givers you OR head OR tails 
+
+Bernulli : the total probability is 1 ... so ... probability of p(FALSE) = 1 - p(TRUE)
+
+
+Poisson Distribution
+=======================================================================
+Frequency of an event to occur in a specific period of time or distance.
+The events do not depend of each other.
+
+Example:
+You create an online course. You expect to receive an average of 4 questions in 1 day. 
+You received 7 questions in one day. Surprised by the sudden spike, you want to know how likely it was that you would receive 7 questions.
+
+Anticipated number of questions = 4 (lambda)
+Time Interval = one day
+y = 7
+
+P(7) = 0.06 ... so ... you have a 6% chance to get 7 questions in 1 day.
+
+Example 2: 
+Based on the data of an online search provider, a new company believes its website is viewed 1,500 times per week. 
+What is the probability that in the next 4 weeks, the company's website will be viewed more than 5,000 times?
+
+Anticipated number of questions = 4 weeks x 1,500/week -> lambda = 6,000
+Time Interval =  4 weeks
+y = 5,000
+
+
+Hypergeometric Distribution
+=======================================================================
+Frequency of an event to occur in a specific period of time or distance.
+The events DO DEPEND of each other.
+(when you take one spades card from the poker deck, the probability of the next card be spades reduces)
+
+When you get a poker hand, what is the probability of getting 2 cards of spades?
+(probability of 1 specific scenario = get 2 cards of spades)
+
+N = population = 52 cards in the deck
+A = total items of interest in the population = 13 possible spade cards
+n = sample size = number of cards you get 5
+x = number of spade cards you expect to get in a 5 cards hand
+
+= hypgeom.dist (2, 5, 13, 52, FALSE)
+= 0.274 = 27.4% chance of getting 2 spade cards in your hand.
+
+When you get a poker hand, what is the probability of getting at least 2 cards of spades?
+(probability of MULTIPLE scenarios ... you can get 0, 1, or 2 cards of spades)
+= hypgeom.dist (2, 5, 13, 52, TRUE)
+= 0.907 = 90.7% chance of getting 0, 1 or 2 spade cards in your hand.
+
+
+Logistic Regression
+=======================================================================
+- Logistic regression predicts the probability of an outcome, event, or observation 
+falling into one of two possible categories (e.g., yes/no, 0/1, true/false).
+
+- It’s commonly employed in scenarios where we want to classify data points into two distinct classes.
+
+Use Cases (answer is yes  no):
+- Spam Detection: Identifying whether an email is spam or not.
+- Medical Diagnosis: Diagnosing diseases based on patient test results.
+- ustomer Churn Prediction: Predicting whether a customer will churn (leave) a service.
+
+
+Cauchy distribution
+=======================================================================
+
+
+
+

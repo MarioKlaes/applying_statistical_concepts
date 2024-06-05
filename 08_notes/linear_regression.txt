@@ -1,0 +1,54 @@
+Video: https://www.youtube.com/watch?v=7ArmBVF2dCs
+-----------------------------------------------------------------
+
+Linear Regression
+=================================================================================================
+Relate 2 or more variables (in alinear way) using one to predict the other.
+
+-> Slope (line inclination)
+	-> positive relation: when Y increases(+) X increase(+)
+	-> negative relation: When Y increases(+) X decreases(-) (or vice versa)
+
+-> Variance (something) = (sum of the squares / the number of things)^2
+
+How to tell if the linear model is good enough to be used to predict?
+---------------------------------------------------------------------
+-> R^2: used to evaluate if the linear model is good enough to be used to predict
+
+Example: Predict the mouse zise based on mouse weight.
+relating mouse size (y) vs mouse weight (x)
+
+->If, R2 = 0.6 = 60% .... this means that mouse weight (x) "explains" 60% of the variation on the  mouse size (y)
+
+
+Example 2: use Mouse Weight and Mouse Tail Length to predict the Mouse Body Size Length (3D graphic)
+-> it is iportant to check the equation ... in any X or Z have a zero this means this variable do not affect the result, therefore, there are no relation.
+
+
+How to sey if R2 is meaningful and can be used to evaluate the relationship between the variables?
+User p-Value!!
+
+How to interpret p-value?
+-------------------------
+
+- A low p-value (typically less than 0.05) indicates that you can reject the null hypothesis. In other words, there is sufficient evidence to conclude that the predictor variable has a statistically significant effect on the response variable.
+==> in other words: p-value < 0.05 one variable can explain the other ... so me model/equation can be used
+
+- Conversely, a high p-value (greater than 0.05) suggests that there is insufficient evidence to conclude that the predictor variable has a non-zero correlation with the response variable.
+==> in other words: p-value > 0.05 one variable CAN NOT explain the other ... so me model/equation CAN NOT be used
+
+- If the linear regression has more than 2 variables, then the p-value is extremelly important!!
+We have 1 p-value for each variable. The p-values > 0.05 can be discarded.
+
+For example, consider a regression output where the p-values for the predictor variables are as follows:
+	South: p-value = 0.000 (statistically significant)
+	North: p-value = 0.000 (statistically significant)
+	East: p-value = 0.092 (not statistically significant)
+	In this case, you would likely keep the South and North variables in your model but consider removing East
+
+
+
+
+
+
+ 
